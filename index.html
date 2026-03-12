@@ -56,10 +56,13 @@ section{padding:96px 8%;}
 .section-sub{font-size:16px;color:var(--slate);line-height:1.75;max-width:520px;}
 
 #about{background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.about-image-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.about-image-grid img{width:100%;border-radius:12px;display:block;object-fit:cover;}
-.about-image-grid img:first-child{grid-column:1/-1;height:220px;}
-.about-image-grid img:not(:first-child){height:160px;}
+.about-image-grid img {
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
 .about-points{margin-top:32px;display:flex;flex-direction:column;gap:16px;}
 .about-point{display:flex;align-items:flex-start;gap:14px;}
 .ap-dot{width:28px;height:28px;background:var(--teal-lt);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;margin-top:1px;color:var(--teal);font-weight:700;}
@@ -176,7 +179,7 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25);}
     </div>
   </div>
   <div class="hero-image-wrap">
-    <img src="https://pixabay.com/images/download/hosnysalah-doctor-8264060_1920.jpg" alt="Pharmacist helping a patient" referrerpolicy="no-referrer">
+    <img src="hero image.jpeg" alt="Pharmacist helping a patient" referrerpolicy="no-referrer">
     <div class="hero-float-card">
       <div class="hfc-icon">&#11088;</div>
       <div>
@@ -208,9 +211,7 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25);}
 
 <section id="about">
   <div class="about-image-grid">
-    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=900&q=80&fit=crop&auto=format" alt="Pharmacy counter" referrerpolicy="no-referrer" crossorigin="anonymous">
-    <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=600&q=80&fit=crop&auto=format" alt="Pharmacist at work" referrerpolicy="no-referrer" crossorigin="anonymous">
-    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80&fit=crop&auto=format" alt="Patient consultation" referrerpolicy="no-referrer" crossorigin="anonymous">
+    <img src="image 3.webp" alt="Pharmacy counter" referrerpolicy="no-referrer" crossorigin="anonymous">
   </div>
   <div class="about-content">
     <div class="eyebrow">Who We Are</div>
@@ -372,18 +373,21 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25);}
     <p class="section-sub">Book a free 30-minute consultation. No commitment — just a clear, honest strategy for your pharmacy's digital future.</p>
     <div class="hero-actions">
       <button class="btn-primary" id="ctaBtn">Book Free Consultation</button>
-      <a class="btn-outline" href="mailto:apotekrep@gmail.com">apotekrep@gmail.com</a>
     </div>
+    <p style="margin-top:14px; font-size:13px; color:#475569;">
+  Or email us directly at 
+  <a href="mailto:apotekrep@gmail.com" style="color:#0d9488; font-weight:600; text-decoration:none;">apotekrep@gmail.com</a>
+</p>
   </div>
   <div class="cta-image">
-    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80&fit=crop&auto=format" alt="Pharmacist consultation" referrerpolicy="no-referrer" crossorigin="anonymous">
+    <img src="second image.webp" alt="Pharmacist consultation" referrerpolicy="no-referrer" crossorigin="anonymous">
   </div>
 </section>
 
 <footer>
   <div class="footer-logo">
     <img src="Apotek.jpg" alt="Apotek logo" onerror="this.style.display='none'">
-    Apotek
+    Apotekrep
   </div>
   <div class="footer-links">
     <a href="#about">About</a>
