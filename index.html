@@ -164,7 +164,7 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25);}
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#mission">Mission</a></li>
-    <li><a href="#" class="nav-cta" id="navBtn">Get Started</a></li>
+    
   </ul>
 </nav>
 
@@ -174,7 +174,7 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25);}
     <h1>Your patients trust you. <em>Make sure the internet knows it.</em></h1>
     <p>Apotek helps independent pharmacies build, protect, and grow their online reputation — so the care you give every day is reflected everywhere that matters.</p>
     <div class="hero-actions">
-      <button class="btn-primary" id="heroBtn">Book Free Consultation</button>
+    
       <a class="btn-outline" href="#services">See Our Services</a>
     </div>
   </div>
@@ -236,11 +236,17 @@ footer p{font-size:13px;color:rgba(255,255,255,0.25);}
 
 <section id="services">
   <div class="services-header">
-    <div>
+    <div style="display:flex; align-items:center; gap:40px; margin-bottom:48px;">
+      <div style="flex:1;">
+    <video style="width:100%; border-radius:12px;" autoplay muted loop controls>
+  <source src="AspectRatio_Resizer_V1.mp4" type="video/mp4">
+</video></div>
+</div>
+      <div style="flex:1;">
       <div class="eyebrow">What We Do</div>
-      <h2 class="section-title" style="margin-bottom:0;">Three pillars of pharmacy trust.</h2>
+      <h2 class="section-title" style="margin-bottom:0;">Three pillars of pharmacy trust.</h2></div>
     </div>
-    <button class="btn-primary" id="servicesBtn">Get Started</button>
+    
   </div>
   <div class="services-grid">
     <div class="service-card">
@@ -515,9 +521,8 @@ function showStep(n) {
 }
 
 window.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('navBtn').addEventListener('click', function(e) { e.preventDefault(); openModal(); });
-  document.getElementById('heroBtn').addEventListener('click', openModal);
-  document.getElementById('servicesBtn').addEventListener('click', openModal);
+ 
+  
   document.getElementById('ctaBtn').addEventListener('click', openModal);
   document.getElementById('closeBtn').addEventListener('click', closeModal);
   document.getElementById('modalBackdrop').addEventListener('click', closeModal);
